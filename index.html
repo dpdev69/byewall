@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ByeWall – Skips Paywalls Instantly</title>
-  <!-- Google Fonts -->
+  <title>ByeWall – Effortless Paywall Bypass</title>
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -14,58 +14,70 @@
       --font-heading: 'Montserrat', sans-serif;
       --font-body: 'Inter', sans-serif;
     }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: var(--font-body); color: var(--color-secondary); line-height: 1.6; }
-    header { background-color: var(--color-primary); color: #fff; text-align: center; padding: 4rem 1rem; }
-    header img { width: 72px; height: auto; margin-bottom: 1rem; }
-    header h1 { font-family: var(--font-heading); font-size: 2.5rem; margin: 0; }
-    header p { font-size: 1.2rem; margin: 1rem 0 2rem; }
-    .btn { display: inline-block; background-color: var(--color-accent); color: #fff; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 4px; font-weight: 600; }
-    section { max-width: 800px; margin: 3rem auto; padding: 0 1rem; }
-    h2 { font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 1rem; text-align: center; }
-    .grid { display: grid; gap: 2rem; }
-    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-    h3 { margin-top: 0; font-family: var(--font-heading); color: var(--color-secondary); }
-    footer { text-align: center; padding: 2rem 1rem; background: #f9f9f9; font-size: 0.9rem; }
-    a { color: var(--color-accent); text-decoration: none; }
-    ul { margin: 0.5rem 0 1.5rem 1.25rem; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-body); color: var(--color-secondary); }
+    a { text-decoration: none; color: inherit; }
+    header { position: fixed; top: 0; width: 100%; padding: 1rem 4rem; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); z-index: 100; }
+    header img { height: 32px; }
+    nav a { margin-left: 2rem; font-weight: 500; font-size: 0.95rem; color: var(--color-secondary); }
+    .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 2rem; background: #f9f9f9; }
+    .hero h1 { font-family: var(--font-heading); font-size: 4rem; line-height: 1.1; color: var(--color-primary); margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; margin-bottom: 2rem; max-width: 600px; }
+    .btn { display: inline-block; background-color: var(--color-accent); color: #fff; padding: 0.75rem 2rem; border-radius: 24px; font-weight: 600; font-size: 1rem; transition: background-color 0.3s; }
+    .btn:hover { background-color: var(--color-primary); }
+    section { padding: 6rem 2rem; max-width: 900px; margin: 0 auto; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 4rem; }
+    .feature { text-align: center; }
+    .feature-icon { font-size: 3rem; color: var(--color-primary); margin-bottom: 1rem; }
+    .feature h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .feature p { font-size: 1rem; color: #555; }
+    footer { text-align: center; padding: 4rem 2rem; background: #fafafa; color: #777; font-size: 0.9rem; }
   </style>
 </head>
 <body>
   <header>
     <img src="images/byewall-logo.svg" alt="ByeWall Logo">
-    <h1>ByeWall</h1>
-    <p>Skips paywalls so you can read any article instantly.</p>
-    <a href="https://github.com/YOUR_USERNAME/unarchive-safari-extension" class="btn">Get it on Mac App Store</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="https://github.com/YOUR_USERNAME/unarchive-safari-extension" target="_blank">GitHub</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Core Brand Message</h2>
-    <p><strong>Mission:</strong> Empower readers to move effortlessly through information barriers.</p>
-    <p><strong>Promise:</strong> No more dead ends—just seamless reading.</p>
-    <p><strong>Positioning:</strong> The easiest, fastest way to open paywalled content, right from your toolbar.</p>
-  </section>
+  <div class="hero">
+    <h1>ByeWall</h1>
+    <p>ByeWall skips paywalls so you can read any article instantly. One click is all it takes.</p>
+    <a href="https://github.com/YOUR_USERNAME/unarchive-safari-extension" class="btn" id="download">Get it on GitHub</a>
+  </div>
 
-  <section>
-    <h2>Brand Personality & Voice</h2>
-    <div class="grid grid-2">
-      <div>
-        <h3>Helpful & Unobtrusive</h3>
-        <p>You’re the silent companion that just works.</p>
+  <section id="features">
+    <h2 style="font-family: var(--font-heading); font-size: 2rem; text-align: center; margin-bottom: 3rem;">Features</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🔓</div>
+        <h3>One-Click Unlock</h3>
+        <p>Instantly bypass paywalls with a single toolbar click—no configuration needed.</p>
       </div>
-      <div>
-        <h3>Light & Friendly</h3>
-        <p>Minimal friction, maximum reading—coverage, not controversy.</p>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Fetch any archived page or submit new ones in the blink of an eye.</p>
       </div>
-      <div>
-        <h3>Trustworthy & Secure</h3>
-        <p>We respect privacy and don’t collect personal data.</p>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy First</h3>
+        <p>No tracking, no data collection. Your reading habits stay yours.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌐</div>
+        <h3>Global Support</h3>
+        <p>Works with archive.is, archive.today, and more—across all domains.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 ByeWall. <a href="https://github.com/YOUR_USERNAME/unarchive-safari-extension">Source on GitHub</a></p>
+    © 2025 ByeWall. <a href="https://github.com/YOUR_USERNAME/unarchive-safari-extension" target="_blank">Source on GitHub</a>
   </footer>
 </body>
 </html>
