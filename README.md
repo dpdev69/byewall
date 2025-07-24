@@ -1,6 +1,6 @@
 ByeWall
 
-ByeWall is a minimal Safari Web Extension (macOS & iOS) that skips paywalls so you can read any article instantly. One click from your toolbar unlocks archived content or archives uncached pages on the spot.
+ByeWall is a minimal Web Extension that skips paywalls so you can read any article instantly. One click from your toolbar unlocks archived content or archives uncached pages on the spot.
 
 ⸻
 
@@ -13,7 +13,7 @@ Features
 ⸻
 
 Usage
-	1.	Browse any article in Safari.
+	1.	Browse any article.
 	2.	Click the ByeWall toolbar icon (🔓).
 	3.	If an archived version exists, it opens immediately; otherwise, it archives and then displays the page.
 
